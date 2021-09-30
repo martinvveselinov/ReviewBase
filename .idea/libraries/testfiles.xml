@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="testfiles">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/testfiles/manyJs.zip!/" />
+      <root url="jar://$PROJECT_DIR$/testfiles/deniedextensions.zip!/" />
+      <root url="jar://$PROJECT_DIR$/testfiles/fewJS.zip!/" />
+      <root url="jar://$PROJECT_DIR$/testfiles/good.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

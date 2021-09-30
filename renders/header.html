@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="../../css/lato100.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../css/main_menu.css">
+        <link rel="stylesheet" href="../../css/buttons.css">
+        <link rel="stylesheet" href="../../css/table.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#upload").click(function () {
+                    $("#homepage").removeClass("active");
+                    $("#choose").removeClass("active");
+                    $("#grade").removeClass("active");
+                    $("#upload").addClass("active");    
+                    $("#upload-panel").toggle();     
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <span id="result"></span>
+        <div class="container">
+           <div id='cssmenu'>
+                <ul>
+                    <li id="homepage"><a href='../../php/login/logged_in.php'><div class="cssmenuitemwrapper"><span><img src="../../img/home.png" width="70" height="70"></span><span style="padding-left: 10px">Начална страница</span></div></a></li>
+                    <li id="choose"><a href='../../student/uploads/choose.php'><div class="cssmenuitemwrapper"><span><img src="../../img/choose.png" width="70" height="70"></span><span style="padding-left: 10px">Избери Реферат</span></div></a></li>
+                    <li id="upload"><a><div class="cssmenuitemwrapper"><span><img src="../../img/upload.png" width="70" height="70"></span><span style="padding-left: 10px">Качи</span></div></a></li>
+                    <li id="grade"><a href="../../student/grades/grade.php"><div class="cssmenuitemwrapper"><span><img src="../../img/grade.png" width="70" height="70"></span><span style="padding-left: 10px">Оцени студент</span></div></a></li>
+                    <li id="logout"><a href='../../php/login/logout.php'><div class="cssmenuitemwrapper"><span><img src="../../img/logout.png" width="70" height="70"></span><span style="padding-left: 10px">Изход</span></div></a></li>
+                    <ul class="upload-panel" hidden id="upload-panel">
+                        <li ><a href='../../student/uploads/uploadpres.php'><div class="cssmenuitemwrapper"><span><img src="../../img/present.png" width="70"></span><span style="padding-left: 10px">Презентация</span></div></a></li>
+                        <li ><a href='../../student/uploads/uploadinvite.php'><div class="cssmenuitemwrapper"><span><img src="../../img/invite.png" width="70"></span><span style="padding-left: 10px">Покана</span></div></a></li>
+                        <li ><a href='../../student/uploads/uploadref.php'><div class="cssmenuitemwrapper"><span><img src="../../img/referat.png" width="70" height="70"></span><span style="padding-left: 10px">Реферат</span></div></a></li>
+                    </ul>
+                </ul>

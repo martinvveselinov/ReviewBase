@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="ref">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_0.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_6.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_7.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_5.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_3.zip!/" />
+      <root url="jar://$PROJECT_DIR$/student/uploads/ref/12345_ref_4.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

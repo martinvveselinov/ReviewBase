@@ -1,0 +1,57 @@
+<!DOCTYPE html>../..../..
+<html>
+    <head>
+        <link href="./css/lato100.css" rel="stylesheet" type="text/css">
+        <meta Content-type: text/plain; charset='utf-8'>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main_menu.css">
+        <link rel="stylesheet" href="./css/buttons.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <title>ReviewBase</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="http://w14ref.w3c.fmi.uni-sofia.bg/img/favicon.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="title"><center><div class="cssmenuitemwrapper"><span><img src="http://w14ref.w3c.fmi.uni-sofia.bg/img/logo.png" height="100"></span><span style="padding-left: 10px">ReviewBase</span></div></center></div>
+                <div class="form_holder">
+<h3>Регистрация</h3>
+<form id="myform" method="post">
+   <span id="error"></span>
+   Факултетен номер: <input type="text" id="fn" name="fn">
+   Потребителско име: <input type="text" id="name" name="name" value=''>
+   E-mail: <input type="text" id="mail" name="mail" value=''>
+    Парола: <input type="password" id="pass" name="pass">
+    Повторете паролата: <input type="password" id="pass2" name="pass2">
+   <a class="btn green" onclick="submit()">Регистрация</a>
+   <a class="btn green" onclick="back()">Вход</a>
+</form>
+</div>
+            </div>
+        </div>
+        <script>
+        function back(){
+            location.href="./index.php";
+        }
+       function submit(){
+    var username = document.getElementById("name").value;
+    var email = document.getElementById("mail").value;
+    var fn = document.getElementById("fn").value;
+    var password = document.getElementById("pass").value;
+    var password2 = document.getElementById("pass2").value;
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            if(this.responseText != ""){
+                document.getElementById("error").innerHTML = this.responseText;
+            }
+            else{
+               location.href="./index.php";
+            }
+       }
+    };
+    xhr.open('GET', "./php/login/register.php?name="+username+"&mail="+email+"&fn="+fn+"&pass="+password+"&pass2="+password2, true);
+    xhr.send();
+}</script>
+    </body>
+</html>
