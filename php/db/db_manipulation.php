@@ -17,7 +17,7 @@ function clear($type){
 	elseif($type == 'log'){
 		$table = "log_stats";
 	}
-    global $connection;;
+    global $connection; 
     if($table != "log_stats"){
 
         $sql = "SELECT file FROM $table";

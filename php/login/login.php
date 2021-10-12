@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "../db/db_manipulation.php";
+	echo "asd";
     if(!isset($_SESSION['uname'])){
         unset( $_SESSION['errorMessage'] );
         unset( $_SESSION['blocked'] );
@@ -9,6 +10,7 @@
 ?>
 <?php
 	global $allowed_devices;
+	echo "asd";
 	if(isset($_POST)){
 		unset( $_SESSION['errorMessage'] );
 		unset( $_SESSION['blocked'] );

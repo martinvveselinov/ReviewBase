@@ -15,7 +15,7 @@
         
         <div class="container">
             <div class="content">
-                <div class="title"><center><div class="cssmenuitemwrapper"><span><img src="http://w14ref.w3c.fmi.uni-sofia.bg/img/logo.png" height="100"></span><span style="padding-left: 10px">ReviewBase</span></div></center></div>
+                <div class="title"><div class="cssmenuitemwrapper"><span><img src="http://w14ref.w3c.fmi.uni-sofia.bg/img/logo.png" height="100"></span><span style="padding-left: 10px">ReviewBase</span></div></div>
                 <div class="form_holder">
                     
 <h3>Добавяне на ново устройство</h3>

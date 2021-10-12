@@ -4,7 +4,7 @@ include "../../php/db/db_manipulation.php";
 $i = 0;
 $invitations = display_upl('inv');
 if(count($invitations) > 0){
-    echo "<center><span id=\"status\"></span></center>
+    echo "<span id=\"status\"></span>
 <button class=\"btn green\" onclick=\"cleara('inv')\">Изчисти качвания</button>";
 echo "
 <table class=\"table-fill\">

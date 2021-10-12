@@ -10,12 +10,15 @@
     function validateUsername($username, int $username_max_len, String $reg, &$errors){
         if(!preg_match($reg, $username)) { 
             $errors['username'] = "Потребителското име може да съдържа само букви на латиница и цифри";
+            return false;
         }
         elseif(strlen($username) < 5){
             $errors['username'] = "Минималната дъжина на потребителското име е 5 символа!";
+            return false;
         }
         elseif(existingField('username', $username)){
             $errors['username'] = "Потребителското име е заето!";
+            return false;
         }
         
     }

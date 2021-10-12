@@ -3,11 +3,11 @@
         include "../../php/db/db_manipulation.php";
         $logs = display_log();
         echo "
-        <center><span id=\"status\"></span></center>
+        <span id=\"status\"></span>
         <a class=\"btn green\" onclick=\"cleara('log')\">Изчисти лога</a><br><br>";
         echo "<a class=\"btn green\" href=\"../../admin/log.txt\" download>Изтегли лога</a><br><br>";
         echo "
-        <center><table border='1' >
+        <table border='1' >
         <tr>
         <td> <b>Username</b></td>
         <td><b>IP</b></td>
@@ -24,6 +24,6 @@
                 echo "<td  >" . $log["Browser"] . "</td>";
                 echo "</tr>";
         }
-        echo "</table></center>";
+        echo "</table>";
 ?>
 
